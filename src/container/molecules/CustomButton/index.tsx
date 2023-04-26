@@ -3,13 +3,20 @@ import React from 'react';
 import styles from './styles.scss';
 import {style} from '@mui/system';
 
-const CustomButton = () => {
+const CustomButton = ({onPress, text, type = 'primary', bgColor, fgColor}) => {
   const test = () => {
     Alert.alert('HEY');
   };
   return (
-    <Pressable onPress={test} style={styles.container}>
-      <Text style={styles.text}>sign in</Text>
+    <Pressable
+      onPress={onPress}
+      style={[
+        styles[`${type}Container`],
+        bgColor ? {backgroundColor: bgColor} : {},
+      ]}>
+      <Text style={[styles[`${type}Text`], fgColor ? {color: fgColor} : {}]}>
+        {text}
+      </Text>
     </Pressable>
   );
 };

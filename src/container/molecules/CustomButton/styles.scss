@@ -1,12 +1,27 @@
 .container {
-  background-color: #3b71f3;
-  border-radius: 7px;
   width: 80%;
   padding: 15px;
   align-items: center;
+  margin-top: 10px;
 }
 
-.text {
+.primaryContainer {
+  @extend .container;
+  background-color: #3b71f3;
+  border-radius: 7px;
+}
+
+.tertiaryContainer {
+  @extend .container;
+  background-color: white;
+}
+
+.primaryText {
   color: white;
+  font-weight: bold;
+}
+
+.tertiaryText {
+  color: grey;
   font-weight: bold;
 }
