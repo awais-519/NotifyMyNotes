@@ -1,28 +1,25 @@
 import React from 'react';
-// import GoogleIcon from '@mui/icons-material/Google';
-import Button from 'react-native-paper';
-
-import {Alert, StyleSheet, View} from 'react-native';
+import {Alert, SafeAreaView, StyleSheet} from 'react-native';
 
 import LoginScreen from './src/pages/login';
+import SignupScreen from './src/pages/signup';
+import ConfirmSignupScreen from './src/pages/ConfirmSignup';
 
 const App = () => {
-  const alertMe = () => {
-    Alert.alert('BHAK BHSDK');
-  };
-
   return (
-    <View style={styles.root}>
+    <SafeAreaView style={styles.root}>
       <LoginScreen />
-      {/* <TouchableOpacity onPress={alertMe} >
-          <Text>Touch me to get an alert.</Text>
-        </TouchableOpacity> */}
-    </View>
+      {/* <SignupScreen /> */}
+      {/* <ConfirmSignupScreen /> */}
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  root: {},
+  root: {
+    flex: 1,
+    backgroundColor: 'F9FBFC',
+  },
 });
 
 export default App;

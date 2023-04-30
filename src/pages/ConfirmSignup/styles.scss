@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+}
+
+.confirmYourAccountTitle {
+  font-size: 24px;
+  font-weight: bold; 
+  color: #051C60;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 2%;  
+}
+
+.policySubText{
+  color: #FDB075;
+}
+
+.resendCodeText{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}

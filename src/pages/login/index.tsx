@@ -9,12 +9,11 @@ import {
   ScrollView,
 } from 'react-native';
 import React, {useState} from 'react';
-import CustomInput from '../../container/molecules/CustomInput';
+import CustomInput from '../../components/CustomInput';
 // @ts-ignore
 import NotifyMyShitLogo from '../../../assets/images/NotifyMyShitLogo.png';
 import styles from './styles.scss';
-import CustomButton from '../../container/molecules/CustomButton';
-import {AlertTitle} from '@mui/material';
+import CustomButton from '../../components/CustomButton';
 
 const LoginScreen = () => {
   //useWindowsDimenstion hook is used to get the height of the current screen our app is working on.
